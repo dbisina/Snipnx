@@ -111,6 +111,14 @@
           }
         ]
       }
+        { "language": "Solidity",
+            "snippets": [
+                {
+                    "code": "pragma solidity ^0.8.0;\n contract myContract{\n function greet(string memory _name)  public view returns(string memory){\n return('Greetings ' + _name)\n}\n}"
+                    "description": "Solidity program to return user-specific greeting"
+                }
+            ]
+        }
       
     ]
   }
