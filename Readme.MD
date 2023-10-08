@@ -161,8 +161,37 @@ new_electric_car.charge(30)
 print(f"My electric car current charge level: {new_electric_car.charge_level}")
 ```
 
-    Python Class to demonstrate inheritance
+Python Class to demonstrate inheritance
 
+
+### Take Input from user
+
+```python
+name = input('Enter your name: ')
+print(name)
+```
+
+Python code that takes input from user and prints it out
+
+
+### Exception Handling
+
+```python
+try:
+    first_number = int(input('Enter first number: '))
+    second_number = int(input('Enter second number: '))
+    result = first_number / second_number
+except ZeroDivisionError:
+    print('Error: Division by zero not allowed')
+except Exception as e:
+    print(f'Error: {e}')
+else:
+    print('No exceptions ocurred')
+finally:
+    print('Always executes')
+```
+
+Python code to demonstrate exception and error handling in python
 
 <!-- Add more Python snippets here... -->
 

@@ -94,6 +94,14 @@
           {
             "code": "class ElectricCar(Car):\n            def __init__(self, make, model, year, color, battery_capacity):\n                super().__init__(make, model, year, color):\n                self.battery_capacity = battery_capacity\n                self.charge_level = 50\n            def charge(self, charge_percentage):\n                self.charge_level += charge_percentage\n                self.charge_level = min(self.charge_level, 100)\n        new_electric_car = ElectricCar('Tesla', 'Model 3', 2020, 'Black', 100)\n        new_electric_car.charge(30)\n        print(f'My electric car current charge level: {new_electric_car.charge_level}')",
             "description": "Python Class to demonstrate inheritance"
+          },
+          {
+            "code": "name = input('Enter your name: ')\n            print(name)",
+            "description": "Python code that takes input from user and prints it out"
+          },
+          {
+            "code": "try:\n            first_number = int(input('Enter first number: '))\n            second_number = int(input('Enter second number: '))\n            result = first_number / second_number\n        except ZeroDivisionError:\n            print('Error: Division by zero not allowed')\n        except Exception as e:\n            print(f'Error: {e}')\n        else:\n            print('No exceptions ocurred')\n        finally:\n            print('Always executes')",
+            "description": "Python code to demonstrate exception and error handling in python"
           }
         ]
       },
