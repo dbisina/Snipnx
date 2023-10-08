@@ -82,6 +82,18 @@
           {
             "code": "import json\nperson_data = {'name': 'Alice', 'age': 30}\njson_str = json.dumps(person_data)\nprint(json_str)",
             "description": "Python code to serialize a dictionary to JSON."
+          },
+          {
+            "code": "import requests\n  url = 'https://api.example.com/data'\n  try:  \nresponse = requests.get(url)  \nif response.status_code == 200:\n data = response.json()  \nprint('Data received successfully:', data)\n  else:\n  print('Failed to retrieve data. Status code:', response.status_code)\n  except requests.RequestException as e:\n  print('Error occurred: ', e)",
+            "description": "Python request library to get response from an API."
+          },
+          {
+            "code": "class Car(self, make, model, year, color):\n def __init__(self):\n self.make = make\n  self.model = model\n  self.year = year\n  self.color = color\n  self.speed = 0\n            def accelerate(self, mph):\n                self.speed += mph\n        new_car = Car('Dodge', 'Charger', 2009, 'Red')\n        new_car.accelerate(20)\n        print(f'My car current speed: {new_car.speed}'')",
+            "description": "Python Car class with method to accelerate"
+          },
+          {
+            "code": "class ElectricCar(Car):\n            def __init__(self, make, model, year, color, battery_capacity):\n                super().__init__(make, model, year, color):\n                self.battery_capacity = battery_capacity\n                self.charge_level = 50\n            def charge(self, charge_percentage):\n                self.charge_level += charge_percentage\n                self.charge_level = min(self.charge_level, 100)\n        new_electric_car = ElectricCar('Tesla', 'Model 3', 2020, 'Black', 100)\n        new_electric_car.charge(30)\n        print(f'My electric car current charge level: {new_electric_car.charge_level}')",
+            "description": "Python Class to demonstrate inheritance"
           }
         ]
       },
@@ -110,14 +122,14 @@
             "description": "Java program to calculate and print the sum of two numbers."
           }
         ]
-      }
+      },
         { 
             "language": "Solidity",
             "snippets": [
                 {
                     "code": "pragma solidity ^0.8.0;\n contract myContract{\n function greet(string memory _name)  public view returns(string memory){\n return('Greetings ' + _name)\n}\n}",
                     "description": "Solidity program to return user-specific greeting"
-                },
+                }
             ]
         }
       
