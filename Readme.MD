@@ -102,6 +102,68 @@ print(squared_numbers)
 
 Python list comprehension to square numbers.
 
+### Query an API using GET
+
+```python
+import requests
+url = 'https://api.example.com/data'
+try:
+    response = requests.get(url)
+    if response.status_code == 200:
+        data = response.json()
+        print('Data received successfully:', data)
+    else:
+        print('Failed to retrieve data. Status code:', response.status_code)
+except requests.RequestException as e:
+    print("Error occurred: ", e)
+```
+
+Python request library to get response from an API
+
+### Car Class and Inheritance
+
+```python
+class Car(self, make, model, year, color):
+
+    def __init__(self):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.color = color
+        self.speed = 0
+
+    def accelerate(self, mph):
+        self.speed += mph
+
+new_car = Car("Dodge", "Charger", 2009, "Red")
+new_car.accelerate(20)
+
+print(f"My car current speed: {new_car.speed}")
+```
+
+Python Car class with method to accelerate
+
+```python
+class ElectricCar(Car):
+
+    def __init__(self, make, model, year, color, battery_capacity):
+        super().__init__(make, model, year, color):
+        self.battery_capacity = battery_capacity
+        self.charge_level = 50
+
+    def charge(self, charge_percentage):
+        self.charge_level += charge_percentage
+        self.charge_level = min(self.charge_level, 100)
+
+new_electric_car = ElectricCar("Tesla", "Model 3", 2020, "Black", 100)
+new_electric_car.charge(30)
+
+print(f"My electric car current charge level: {new_electric_car.charge_level}")
+```
+
+    Python Class to demonstrate inheritance
+
+
 <!-- Add more Python snippets here... -->
 
 ## JavaScript
